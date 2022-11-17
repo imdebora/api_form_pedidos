@@ -39,10 +39,10 @@
                     </div>
 
                     <div class="row mb-3">
-                        <label for="datya_previsao_pedido" class="col-sm-2 col-form-label">Data Prevista de Entrega</label>
+                        <label for="data_previsao_entrega" class="col-sm-2 col-form-label">Data Prevista de Entrega</label>
                         <div class="col-sm-10">
-                            <input type="date" name="datya_previsao_pedido" class="form-control"></div>
-                        @error('datya_previsao_pedido')
+                            <input type="date" name="data_previsao_entrega" class="form-control"></div>
+                        @error('data_previsao_entrega')
                         <small class="bg-danger text-white w-25 rounded" role="alert">Data Inválida</small>
                         @enderror
                     </div>

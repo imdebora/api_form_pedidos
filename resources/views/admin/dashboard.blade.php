@@ -48,10 +48,10 @@
                             </div>
                         </div>
                         <div class="alert-button">
-                            <a href=""><button class="button-alert-admin">Agendar Pedidos</button></a>
+                            <a href="{{route('newpurchase')}}"><button class="button-alert-admin">Agendar Pedidos</button></a>
                         </div>
                         <div class="alert-button">
-                            <a href=""><button class="button-alert-admin">Ver Produtos</button></a>
+                            <a href="{{route('productlist')}}"><button class="button-alert-admin">Ver Produtos</button></a>
                         </div>
                         <div class="col-xxl-4 col-xl-12  card-padding">
                             <div class="card info-card customers-card">
@@ -61,7 +61,7 @@
                                         <img src="{{asset('img/icone/diversity.png')}}" width="50px"
                                              alt="clientes-icone">
                                         <div class="ps-3">
-                                            <b><p class="text-dark">Atualmente Temos {{$i = 0}} Clientes
+                                            <b><p class="text-dark">Atualmente Temos {{$id = 0}} Clientes
                                                     Registrados</p></b>
                                         </div>
                                     </div>

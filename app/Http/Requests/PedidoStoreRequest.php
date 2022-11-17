@@ -25,8 +25,8 @@ class PedidoStoreRequest extends FormRequest
     {
         return [
             'numero'=>'required|integer',
-            'data_pedido'=>'required|numeric',
-            'data_previsao_entrega'=>'required|numeric',
+            'data_pedido'=>'required|string',
+            'data_previsao_entrega'=>'required|string',
             'valor_total'=>'required|numeric'
         ];
     }

@@ -25,18 +25,21 @@ Route::get('/cliente', [ClientesController::class, 'index'])->name('clienteindex
 Route::get('/listaclientes', [ClientesController::class, 'list'])->name('clientlist');
 Route::get('/novocliente', [ClientesController::class, 'new'])->name('newclient');
 Route::post('/novocliente', [ClientesController::class, 'store'])->name('clientstore');
-Route::get('/editarcliente', [ClientesController::class, 'edit'])->name('editclient');
+Route::get('/editarcliente/{client}', [ClientesController::class, 'edit'])->name('editclient');
+Route::put('/editarcliente/{client}', [ClientesController::class, 'update'])->name('updateclient');
 
 // Rotas para produtos
 
 Route::get('/listaprodutos', [ProdutosController::class, 'list'])->name('productlist');
 Route::get('/novoproduto', [ProdutosController::class, 'new'])->name('newproduct');
+Route::post('/novoproduto', [ProdutosController::class, 'store'])->name('productstore');
 Route::get('/editarproduto', [ProdutosController::class, 'edit'])->name('editproduct');
 
 // Rotas para pedidos
 
-Route::get('/listapedidos', [PedidosController::class, 'list'])->name('productlist');
+Route::get('/listapedidos', [PedidosController::class, 'list'])->name('purchaselist');
 Route::get('/novopedido', [PedidosController::class, 'new'])->name('newpurchase');
+Route::post('/novopedido', [PedidosController::class, 'store'])->name('purchasestore');
 
 
 

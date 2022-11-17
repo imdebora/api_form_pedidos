@@ -33,4 +33,11 @@ class ClientesController extends Controller
         return Redirect::route('clientlist');
 
     }
+    public function update(Clientes $clientes, ClienteStoreRequest $clienteStoreRequest)
+    {
+        $updateclient = $clienteStoreRequest->validated();
+        $clientes->fill($updateclient);
+        $clientes->saveOrFail();
+        return Redirect::route('clientlist');
+    }
 }
