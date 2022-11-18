@@ -47,12 +47,22 @@
                         @enderror
                     </div>
 
+                    <label class="col-sm-2 col-form-label">Produtos</label>
+                    <div class="col-sm-10">
+                        <select class="form-select" name="produto_id" required>
+                            <option selected >Abrir as Opções</option>
+                            @foreach($products as $product)
+                                <option  value={{$product->id}}>{{$product->nome}}</option>
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
                     <div class="row mb-3">
-                        <label for="valor_total" class="col-sm-2 col-form-label">Valor Total</label>
+                        <label for="valor_total" class="col-sm-2 col-form-label">Quantidade</label>
                         <div class="col-sm-10">
-                            <input type="text" name="valor_total" class="form-control"></div>
-                        @error('valor_total')
-                        <small class="bg-danger text-white w-25 rounded" role="alert">Valor Inválido</small>
+                            <input type="number" name="quantidade" class="form-control"></div>
+                        @error('quantidade')
+                        <small class="bg-danger text-white w-25 rounded" role="alert">Quantidade Inválida</small>
                         @enderror
                     </div>
 

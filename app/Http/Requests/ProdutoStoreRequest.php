@@ -24,6 +24,7 @@ class ProdutoStoreRequest extends FormRequest
     public function rules()
     {
         return [
+            'id'=>'integer',
             'nome'=>'required|string',
             'codigo'=>'required|string',
             'preco'=>'required|numeric',

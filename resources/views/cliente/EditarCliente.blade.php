@@ -10,7 +10,6 @@
                       action="">
                     @csrf
                     @method('PUT')
-                    {{-- @foreach ($clients as $client) --}}
                         <div class="row mb-3">
                             <label for="codigo" class="col-sm-2 col-form-label">Código</label>
                             <div class="col-sm-10">
@@ -20,10 +19,10 @@
                             @enderror
                         </div>
                         <div class="row mb-3">
-                            <label for="name" class="col-sm-2 col-form-label">Nome</label>
+                            <label for="nome" class="col-sm-2 col-form-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="text" name="name" class="form-control" value={{$client->nome}}></div>
-                            @error('name')
+                                <input type="text" name="nome" class="form-control" value={{$client->nome}}></div>
+                            @error('nome')
                             <small class="bg-danger text-white w-25 rounded" role="alert">Nome Inválido</small>
                             @enderror
                         </div>
@@ -33,10 +32,10 @@
                                 <input type="text" name="fantasia" class="form-control" value="{{$client->fantasia}}"></div>
                         </div>
                         <div class="row mb-3">
-                            <label for="tipo" class="col-sm-2 col-form-label">Tipo de pessoa</label>
+                            <label for="tipo_pessoa" class="col-sm-2 col-form-label">Tipo de pessoa</label>
                             <div class="col-sm-10">
-                                <input type="text" name="cpf" class="form-control"></div>
-                            @error('cpf')
+                                <input type="text" name="tipo_pessoa" class="form-control" value="{{$client->tipo_pessoa}}"></div>
+                            @error('tipo_pessoa')
                             <small class="bg-danger text-white w-25 rounded" role="alert">CPF Inválido</small>
                             @enderror
                         </div>
@@ -51,7 +50,7 @@
                         <div class="row mb-3">
                             <label for="cep" class="col-sm-2 col-form-label">CEP</label>
                             <div class="col-sm-10">
-                                <input class="form-control" type="text" id="cep" name="cep"
+                                <input class="form-control" value="{{$client->cep}}" type="text" id="cep" name="cep"
                                     onblur="pesquisacep(this.value);">
                                 @error('cep')
                                 <small class="bg-danger text-white w-25 rounded" role="alert"></small>
@@ -109,7 +108,6 @@
                                 <button type="submit" class="btn bg-success text-light">Confirmar</button>
                             </div>
                         </div>
-                    {{-- @endforeach --}}
                 </form>
             </div>
         </div>

@@ -12,19 +12,8 @@
                 <i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-                <li>
-                    <a href="{{route('newproduct')}}">
-                        <i class="bi bi-circle"></i>
-                        <span>Inserir Novo Produto</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{route('productlist')}}">
-                        <i class="bi bi-circle"></i>
-                        <span>Listar Produtos</span>
-                    </a>
-                </li>
-
+                <li><a href="{{route('newproduct')}}"><i class="bi bi-circle"></i><span>Inserir Novo Produto</span></a></li>
+                <li><a href="{{route('productlist')}}"><i class="bi bi-circle"></i><span>Listar Produtos</span></a></li>
             </ul>
         </li>
         <li class="nav-item  bg-light">

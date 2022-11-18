@@ -27,21 +27,25 @@ Route::get('/novocliente', [ClientesController::class, 'new'])->name('newclient'
 Route::post('/novocliente', [ClientesController::class, 'store'])->name('clientstore');
 Route::get('/editarcliente/{client}', [ClientesController::class, 'edit'])->name('editclient');
 Route::put('/editarcliente/{client}', [ClientesController::class, 'update'])->name('updateclient');
+Route::delete('/listaclientes/apagar/{client}', [ClientesController::class, 'destroy'])->name('destroyclient');
+Route::post('/carregarclientes', [ClientesController::class, 'apiclientesview'])->name('apiclientesview');
 
 // Rotas para produtos
 
 Route::get('/listaprodutos', [ProdutosController::class, 'list'])->name('productlist');
 Route::get('/novoproduto', [ProdutosController::class, 'new'])->name('newproduct');
 Route::post('/novoproduto', [ProdutosController::class, 'store'])->name('productstore');
-Route::get('/editarproduto', [ProdutosController::class, 'edit'])->name('editproduct');
+Route::get('/editarproduto/{produto}', [ProdutosController::class, 'edit'])->name('editproduct');
+Route::put('/editarproduto/{produto}', [ProdutosController::class, 'update'])->name('updateproduct');
+Route::delete('/listaprodutos/apagar/{produto}', [ProdutosController::class, 'destroy'])->name('destroyproduct');
+Route::post('/carregarprodutos', [ProdutosController::class, 'apiprodutosview'])->name('apiprodutosview');
+
 
 // Rotas para pedidos
 
 Route::get('/listapedidos', [PedidosController::class, 'list'])->name('purchaselist');
 Route::get('/novopedido', [PedidosController::class, 'new'])->name('newpurchase');
 Route::post('/novopedido', [PedidosController::class, 'store'])->name('purchasestore');
-
-
 
 // Route::get('/', function () {
 //     return view('welcome');

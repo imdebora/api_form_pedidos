@@ -1,0 +1,132 @@
+{
+	"produtos": [
+		{
+			"produto": {
+				"id": 609528436,
+				"nome": "Espaguete Termo Retr\u00e1til 0,8 mm com Contra\u00e7\u00e3o 2:1 -T2Z",
+				"codigo": "L-T2Z0008",
+				"preco": 0.52,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "P",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		},
+		{
+			"produto": {
+				"id": 609528524,
+				"nome": "Espaguete Termo Retr\u00e1til 0,8 mm com Contra\u00e7\u00e3o 2:1 -T2Z - Preto - 10M",
+				"codigo": "L-T2Z0008PTM-R-10M",
+				"preco": 5.23,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "V",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		},
+		{
+			"produto": {
+				"id": 609528541,
+				"nome": "Espaguete Termo Retr\u00e1til 0,8 mm com Contra\u00e7\u00e3o 2:1 -T2Z - Preto - 15M",
+				"codigo": "L-T2Z0008PTM-R-15M",
+				"preco": 7.84,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "V",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		},
+		{
+			"produto": {
+				"id": 609528506,
+				"nome": "Espaguete Termo Retr\u00e1til 0,8 mm com Contra\u00e7\u00e3o 2:1 -T2Z - Preto - 1M",
+				"codigo": "L-T2Z0008PTM-R-1M",
+				"preco": 0.52,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "V",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		},
+		{
+			"produto": {
+				"id": 609528552,
+				"nome": "Espaguete Termo Retr\u00e1til 0,8 mm com Contra\u00e7\u00e3o 2:1 -T2Z - Preto - 25M",
+				"codigo": "L-T2Z0008PTM-R-25M",
+				"preco": 13.07,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "V",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		},
+		{
+			"produto": {
+				"id": 609528515,
+				"nome": "Espaguete Termo Retr\u00e1til 0,8 mm com Contra\u00e7\u00e3o 2:1 -T2Z - Preto - 5M",
+				"codigo": "L-T2Z0008PTM-R-5M",
+				"preco": 2.61,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "V",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		},
+		{
+			"produto": {
+				"id": 609533121,
+				"nome": "Espaguete Termo Retr\u00e1til 1,0 mm com Contra\u00e7\u00e3o 2:1 -T2Z",
+				"codigo": "L-T2Z0010",
+				"preco": 0.52,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "P",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		},
+		{
+			"produto": {
+				"id": 609533190,
+				"nome": "Espaguete Termo Retr\u00e1til 1,0 mm com Contra\u00e7\u00e3o 2:1 -T2Z - Preto - 10M",
+				"codigo": "L-T2Z0010PTM-R-10M",
+				"preco": 5.23,
+				"preco_promocional": 0,
+				"unidade": "M",
+				"gtin": "SEM GTIN",
+				"tipoVariacao": "V",
+				"localizacao": "",
+				"preco_custo": 0,
+				"preco_custo_medio": 0,
+				"situacao": "A"
+			}
+		}
+	]
+}

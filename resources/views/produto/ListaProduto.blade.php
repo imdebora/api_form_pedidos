@@ -3,7 +3,7 @@
 @section('search')
     <div class="search-bar p-3 ">
         <form class="search-form d-flex align-items-center" method="GET" autocomplete="off">
-            <input type="text" name="search" placeholder="Pesquisar Pacientes" title="Procurar Pacientes"><button type="submit"><i class="bi bi-search"></i></button>
+            <input type="text" name="search" placeholder="Pesquisar Produtos" title="Procurar Produtos"><button type="submit"><i class="bi bi-search"></i></button>
         </form>
     </div>
 @endsection
@@ -14,7 +14,7 @@
                 @if(!empty($message))
                     <div class="text-white alert alert-success bg-success text-center"></div>
                 @endif
-                <h5 class="card-title text-center">Lista de Pacientes</h5>
+                <h5 class="card-title text-center">Lista de Produtos</h5>
                 <table class="table table-striped table-hover table-scrollable">
                     <thead>
                     <tr>
@@ -34,7 +34,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach ($products as $product)
+                        @foreach ($products as $product)                            
                         <tr>
                             <td> {{$product->nome}} </td>
 
@@ -59,11 +59,11 @@
                             <td> {{$product->situacao}} </td>
 
                             <td>
-                                <a href="">
+                                <a href="{{route('editproduct', $product->id)}}">
                                     <img src="{{asset('img/icone/edit.png')}}" width="20px" alt="editar item">
                                 </a>
                             </td>
-                            <form method="POST" action="" onsubmit="return confirm('Deseja Remover? Esta ação não poderá ser desfeita.')">
+                            <form method="POST" action="{{route('destroyproduct', $product->id)}}" onsubmit="return confirm('Deseja Remover? Esta ação não poderá ser desfeita.')">
                                 @method('DELETE')
                                 @csrf
                                 <td>
@@ -72,7 +72,7 @@
                                 </td>
                             </form>
                         </tr>
-                    @endforeach
+                        @endforeach
                     </tbody>
                 </table>
             </div>

@@ -18,7 +18,7 @@ return new class extends Migration
             $table->integer('numero');
             $table->string('data_pedido');
             $table->string('data_previsao_entrega');
-            $table->integer('valor_total');
+            $table->integer('valor_total')->nullable();
             $table->timestamps();
         });
     }

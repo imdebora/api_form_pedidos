@@ -9,7 +9,7 @@ class Clientes extends Model
 {
     use HasFactory;
     
-    protected $fillable=['codigo', 'nome', 'fantasia', 'tipo_pessoa', 
+    protected $fillable=['id', 'codigo', 'nome', 'fantasia', 'tipo_pessoa', 
     'cpf_cnpj', 'endereco', 'numero', 'complemento', 'bairro', 'cidade', 'uf', 'cep'];
 
     protected $table='cliente';

@@ -16,10 +16,10 @@ class ClientesController extends Controller
 
         return view('cliente.ListaCliente', compact('clients'));
     }
-    public function edit()
+    public function edit($id)
     {
-        $clients = Clientes::all();
-        return view('cliente.EditarCliente', compact('clients'));
+        $client = Clientes::find($id);
+        return view('cliente.EditarCliente', compact('client'));
     }
     public function new()
     {
@@ -39,5 +39,34 @@ class ClientesController extends Controller
         $clientes->fill($updateclient);
         $clientes->saveOrFail();
         return Redirect::route('clientlist');
+    }
+    public function destroy($id, Clientes $clientes) 
+    {
+        $client = $clientes->find($id);
+
+        $client->delete();
+
+        return Redirect::route('clientlist');
+    }
+    public function apiclientesview(Clientes $clientes)
+    {
+        set_time_limit(300);
+        $newClient = [];
+        $json_data = json_decode(file_get_contents('cliente.json'));
+        foreach ($json_data->cliente as $cliente) {
+            
+            $newClient[] = ['id' => $cliente->contato->id,'codigo' => $cliente->contato->codigo,
+            'nome' => $cliente->contato->nome,'fantasia' => $cliente->contato->fantasia,'tipo_pessoa' => $cliente->contato->tipo_pessoa,
+            'cpf_cnpj' => $cliente->contato->cpf_cnpj,'endereco' => $cliente->contato->endereco,'numero' => $cliente->contato->numero,
+            'complemento' => $cliente->contato->complemento,'bairro' => $cliente->contato->bairro,'bairro' => $cliente->contato->bairro,
+            'cidade' => $cliente->contato->cidade,'uf' => $cliente->contato->uf];
+             
+        }
+           for($i = 0; $i< count($newClient); $i++) {
+            Clientes::create($newClient[$i]);
+           }
+           set_time_limit(60);
+           
+            return Redirect::route('clientlist');
     }
 }

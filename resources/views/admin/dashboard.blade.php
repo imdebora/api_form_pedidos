@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="row table-admin-fundo">
-                        <div class="col-xxl-4 col-md-6  card-padding">
+                        {{-- <div class="col-xxl-4 col-md-6  card-padding">
                             <div class="card info-card sales-card">
                                 <div class="card-body">
                                     <h5 class="card-title text-dark">Atendimento</h5>
@@ -46,13 +46,23 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
+                        <form enctype="multipart/form-data"
+                        method="POST"
+                        action="{{route('apiprodutosview')}}">
+                      @csrf
                         <div class="alert-button">
-                            <a href="{{route('newpurchase')}}"><button class="button-alert-admin">Agendar Pedidos</button></a>
+                            <button class="button-alert-admin" type="submit">Importar Produtos JSON</button></a>
                         </div>
+                    </form>
+                    <form enctype="multipart/form-data"
+                        method="POST"
+                        action="{{route('apiclientesview')}}">
+                      @csrf
                         <div class="alert-button">
-                            <a href="{{route('productlist')}}"><button class="button-alert-admin">Ver Produtos</button></a>
+                            <a href="{{route('productlist')}}"><button class="button-alert-admin">Importar Clientes JSON</button></a>
                         </div>
+                    </form>
                         <div class="col-xxl-4 col-xl-12  card-padding">
                             <div class="card info-card customers-card">
                                 <div class="card-body">
@@ -68,75 +78,8 @@
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="col-12">
-                            <div class="card recent-sales overflow-auto table-admin">
-                                <div class="card-body">
-                                    <h5 class="card-title text-dark">Ultimas Consultas</h5>
-                                    <table class="table table-borderless datatable">
-                                        <thead>
-                                        <tr class="table-admin-head">
-                                            <th scope="col">ID</th>
-                                            <th scope="col">Paciente ID</th>
-                                            <th scope="col">Médico ID</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        @if(!empty($lastDataByDate))
-                                            @foreach($lastDataByDate as $data)
-                                                @if($loop->odd)
-                                                    <tr class="table-secondary">
-                                                        @endif
-                                                        <th scope="row">{{$data['id']}}</th>
-                                                        <td>{{$data['user_name']}}</td>
-                                                        <td>R$ {{number_format($data['total'],2,",",".")}}</td>
-                                                    </tr>
-                                                    @endforeach
-                                                @endif
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card top-selling overflow-auto table-admin">
-                                <div class="card-body pb-0">
-                                    <h5 class="card-title text-dark">Últimos Cadastros</h5>
-                                    <table class="table table-borderless">
-                                        <thead>
-                                        <tr class="table-admin-head">
-                                            <th scope="col">Nota ID</th>
-                                            <th scope="col">Informacao</th>
-                                            <th scope="col">Informacao</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        @if(!empty($lastDataByTotal))
-                                            @foreach($lastDataByTotal as $data)
-                                                @if($loop->odd)
-                                                    <tr class="table-secondary">
-                                                        @endif
-                                                        <th scope="row">{{$data['id']}}</th>
-                                                        <td>{{$data['user_name']}}</td>
-                                                        <td>R$ {{number_format($data['total'],2,",",".")}}</td>
-                                                    </tr>
-                                                    @endforeach
-                                                @endif
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div> --}}
-                {{-- <div class="col-lg-4 info-padding">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Atividades Recentes</h5>
-                            <div class="activity">
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+                </div>
             </div>
         </section>
     </main>

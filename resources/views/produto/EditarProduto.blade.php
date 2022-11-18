@@ -10,95 +10,97 @@
                       action="">
                     @csrf
                     @method('PUT')
-                    
-                    <div class="row mb-3">
-                        <label for="name" class="col-sm-2 col-form-label">Nome</label>
-                        <div class="col-sm-10">
-                            <input type="text" name="name" class="form-control" value=""></div>
-                        @error('name')
-                        <small class="bg-danger text-white w-25 rounded" role="alert">Nome Inválido</small>
-                        @enderror
-                    </div>
-
-                    <div class="row mb-3">
-                        <label for="birth_date" class="col-sm-2 col-form-label">Data de Nascimento</label>
-                        <div class="col-sm-10">
-                            <input type="text" name="birth_date" class="form-control" value=""></div>
-                        @error('birth_date')
-                        <small class="bg-danger text-white w-25 rounded" role="alert">Data Inválida</small>
-                        @enderror
-                    </div>
-
-                    <div class="row mb-3">
-                        <label for="cpf" class="col-sm-2 col-form-label">CPF</label>
-                        <div class="col-sm-10">
-                            <input type="text" name="cpf" class="form-control" value=""></div>
-                        @error('cpf')
-                        <small class="bg-danger text-white w-25 rounded" role="alert">CPF Inválido</small>
-                        @enderror
-                    </div>
                         <div class="row mb-3">
-                            <label for="phone_number_first" class="col-sm-2 col-form-label">Telefone Principal</label>
+                            <label for="nome" class="col-sm-2 col-form-label">Nome</label>
                             <div class="col-sm-10">
-                                <input type="tel" name="phone_number_first" class="form-control" value=""></div>
-                            @error('phone_number_first')
-
-                            <small class="bg-danger text-white w-25 rounded" role="alert">Telefones Inválido</small>
+                                <input type="text" name="nome" class="form-control" value="{{$product->nome}}"></div>
+                            @error('nome')
+                            <small class="bg-danger text-white w-25 rounded" role="alert">Nome Inválido</small>
                             @enderror
                         </div>
-                    <div class="row mb-3">
-                        <label for="phone_number_second" class="col-sm-2 col-form-label">Telefone Recado</label>
-                        <div class="col-sm-10">
-                            <input type="tel" name="phone_number_second" class="form-control" value=""></div>
-                        @error('phone_number_second')
-                        <small class="bg-danger text-white w-25 rounded" role="alert">Telefones Inválido</small>
-                        @enderror
-                    </div>
                         <div class="row mb-3">
-                            <label for="phone_number_third" class="col-sm-2 col-form-label">Número Reserva</label>
+                            <label for="codigo" class="col-sm-2 col-form-label">Código</label>
                             <div class="col-sm-10">
-                                <input type="tel" name="phone_number_third" class="form-control" value=""></div>
-                            @error('phone_number_third')
-                            <small class="bg-danger text-white w-25 rounded" role="alert">Telefones Inválido</small>
+                                <input type="text" name="codigo" class="form-control" value="{{$product->codigo}}"></div>
+                            @error('codigo')
+                            <small class="bg-danger text-white w-25 rounded" role="alert">Código Inválido</small>
                             @enderror
                         </div>
+                        <div class="row mb-3">
+                            <label for="preco" class="col-sm-2 col-form-label">Preço</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="preco" class="form-control" value="{{$product->preco}}"></div>
+                            @error('preco')
+                            <small class="bg-danger text-white w-25 rounded" role="alert">Preço Inválido</small>
+                            @enderror
+                        </div>
+                            <div class="row mb-3">
+                                <label for="preco_promocional" class="col-sm-2 col-form-label">Preço Promocional</label>
+                                <div class="col-sm-10">
+                                    <input type="tel" name="preco_promocional" class="form-control" value="{{$product->preco_promocional}}"></div>
+                                @error('preco_promocional')
+                                <small class="bg-danger text-white w-25 rounded" role="alert">Preço Inválido</small>
+                                @enderror
+                            </div>
+                        <div class="row mb-3">
+                            <label for="unidade" class="col-sm-2 col-form-label">Unidade</label>
+                            <div class="col-sm-10">
+                                <input type="tel" name="unidade" class="form-control" value="{{$product->unidade}}"></div>
+                            @error('unidade')
+                            <small class="bg-danger text-white w-25 rounded" role="alert">Unidade Inválida</small>
+                            @enderror
+                        </div>
+                            <div class="row mb-3">
+                                <label for="gtin" class="col-sm-2 col-form-label">GTIN</label>
+                                <div class="col-sm-10">
+                                    <input type="tel" name="gtin" class="form-control" value="{{$product->gtin}}"></div>
+                                @error('gtin')
+                                <small class="bg-danger text-white w-25 rounded" role="alert">GTIN Inválido</small>
+                                @enderror
+                            </div>
 
-                    <div class="row mb-3">
-                        <label for="email" class="col-sm-2 col-form-label">E-mail</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" type="email" id="formFile" name="email"  value="">
-                            @error('email')
-                            <small class="bg-danger text-white w-25 rounded" role="alert"></small>
-                            @enderror
+                        <div class="row mb-3">
+                            <label for="tipoVariacao" class="col-sm-2 col-form-label">Tipo de Variação</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="tipoVariacao" value="{{$product->tipoVariacao}}">
+                                @error('tipoVariacao')
+                                <small class="bg-danger text-white w-25 rounded" role="alert"></small>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="cep" class="col-sm-2 col-form-label">CEP</label>
-                        <div class="col-sm-10">
-                            <input class="form-control" type="text" id="formFile" name="cep"  value="">
-                            @error('cep')
-                            <small class="bg-danger text-white w-25 rounded" role="alert"></small>
-                            @enderror
+                        <div class="row mb-3">
+                            <label for="localizacao" class="col-sm-2 col-form-label">Localização</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" name="localizacao"  value="{{$product->localizacao}}">
+                                @error('localizacao')
+                                <small class="bg-danger text-white w-25 rounded" role="alert"></small>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="adress" class="col-sm-2 col-form-label">Endereço</label>
-                        <div class="col-sm-10"><input class="form-control" type="text" id="formFile" name="adress"  value="">
-                            @error('adress')
-                            <small class="bg-danger text-white w-25 rounded" role="alert"></small>
-                            @enderror
+                        <div class="row mb-3">
+                            <label for="preco_custo" class="col-sm-2 col-form-label">Preço Custo</label>
+                            <div class="col-sm-10"><input class="form-control" type="text" name="preco_custo" value="{{$product->preco_custo}}">
+                                @error('preco_custo')
+                                <small class="bg-danger text-white w-25 rounded" role="alert"></small>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mb-3">
-                        <label for="adress_number" class="col-sm-2 col-form-label">Número da Residencia</label>
-                        <div class="col-sm-10"><input class="form-control" type="text" id="formFile" name="adress_number"  value="">
-                            @error('adress_number')
-                            <small class="bg-danger text-white w-25 rounded" role="alert"></small>
-                            @enderror
+                        <div class="row mb-3">
+                            <label for="preco_custo_medio" class="col-sm-2 col-form-label">Preço Custo Médio</label>
+                            <div class="col-sm-10"><input class="form-control" type="text" name="preco_custo_medio" value="{{$product->preco_custo_medio}}">
+                                @error('preco_custo_medio')
+                                <small class="bg-danger text-white w-25 rounded" role="alert"></small>
+                                @enderror
+                            </div>
                         </div>
-                    </div>
-                    @endforeach
-
+                        <div class="row mb-3">
+                            <label for="situacao" class="col-sm-2 col-form-label">Situação</label>
+                            <div class="col-sm-10"><input class="form-control" type="text" name="situacao" value="{{$product->situacao}}">
+                                @error('situacao')
+                                <small class="bg-danger text-white w-25 rounded" role="alert"></small>
+                                @enderror
+                            </div>
+                        </div>
                     <div class="text-center">
                         <div class="">
                             <button type="submit" class="btn bg-success text-light">Confirmar</button>

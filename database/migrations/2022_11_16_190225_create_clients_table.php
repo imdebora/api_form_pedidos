@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('bairro');
             $table->string('cidade');
             $table->string('uf');
-            $table->string('cep');
+            $table->string('cep')->nullable();
             $table->timestamps();
         });
     }

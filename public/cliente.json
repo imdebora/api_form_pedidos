@@ -1,0 +1,36 @@
+{        
+	"cliente": [
+		{
+			"contato": {
+				"id": 328165203,
+				"codigo": "48542",
+				"nome": "Indústria de componentes inexistentes LTDA",
+				"fantasia": "Componentes invisíveis",
+				"tipo_pessoa": "J",
+				"cpf_cnpj": "94.354.128\/0501-41",
+				"endereco": "Av. Comercial",
+				"numero": "630",
+				"complemento": "",
+				"bairro": "Industrial",
+				"cidade": "Itajaí",
+				"uf": "SC"
+			}
+		},
+		{
+			"contato": {
+				"id": 281652033,
+				"codigo": "44182",
+				"nome": "Auto Parts Inc",
+				"fantasia": "Auto Parts",
+				"tipo_pessoa": "J",
+				"cpf_cnpj": "38.482.145\/9001-14",
+				"endereco": "Rua Independente",
+				"numero": "570",
+				"complemento": "",
+				"bairro": "Centro",
+				"cidade": "Sao Paulo",
+				"uf": "SP"
+			}
+		}
+	]
+}
