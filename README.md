@@ -9,7 +9,7 @@
 Trata-se de uma plataforma onde se pode cadastrar clientes, produtos e pedidos de qualquer tipo, seguindo as categorias criadas (foi usado para teste um sistema comercial, porém funcionaria com qualquer coisa como por exemplo: cabeleireiro, entregas no geral, agendamentos, etc).
 
 ## 🔧 Como foi desenvolvido? 
-Utilizando os conceitos estudados até o momento foi construído um sistema de agendamento de consultas  com banco de dados MySql 
+Utilizando os conceitos estudados até o momento foi construído um sistema de agendamento de pedidos  com banco de dados MySql 
 utilizando recursos para registrar produtos, clientes e seus respectivos pedidos e também um sistema onde é listado todos as categorias separadamente. 
 
 As páginas foram desenvolvidas utilizando PHP, Laravel e Bootstrap. 
