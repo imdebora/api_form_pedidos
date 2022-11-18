@@ -1,66 +1,36 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Welcome+To+My+GitHub;Project+Form+Pedidos+Author+Débora;Please+Feel+Free+To+Contact+Me)](https://git.io/typing-svg)
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Este é o repositório para o desafio Form Pedidos
 
-## About Laravel
+## Projeto: Form Pedidos!
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ℹ️ O que é?
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Trata-se de uma plataforma onde se pode cadastrar clientes, produtos e pedidos de qualquer tipo, seguindo as categorias criadas (foi usado para teste um sistema comercial, porém funcionaria com qualquer coisa como por exemplo: cabeleireiro, entregas no geral, agendamentos, etc).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🔧 Como foi desenvolvido? 
+Utilizando os conceitos estudados até o momento foi construído um sistema de agendamento de consultas  com banco de dados MySql 
+utilizando recursos para registrar produtos, clientes e seus respectivos pedidos e também um sistema onde é listado todos as categorias separadamente. 
 
-## Learning Laravel
+As páginas foram desenvolvidas utilizando PHP, Laravel e Bootstrap. 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Está incluído dentro do sistema áreas para: visualização de clientes, profissionais, bem como a possibilidade de gerenciamento completo do CRUD, também existe um sistema de validação, a utilização da API dos correios ao se cadastrar como usuário e a possibilidade de fazer a importacão Json dos produtos e clientes.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## 📚 Como Funciona ?
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Antes de tudo, é necessário criar um schema no sql com o nome que preferir, e no arquivo .env usar esse mesmo database.
 
-### Premium Partners
+- Não esqueça de renomear o .env.example para .env e colocar o nome do database que criou, caso contrário o servidor não funcionará
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+- Para fazer o projeto funcionar, clonar o repositório, dar um composer install, npm install, composer update, CONFIGURAR O SEU PROPRIO MYSQL, recomendo criar um database vazio só para teste, e não se esqueça de ligar o servidor MYSQL, após isso, rodar as migrations (php artisan migrate:fresh).
 
-## Contributing
+- Subir o servidor com php artisan serve e acessar o projeto.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Caso peça uma key rode o comando  php artisan key:generate
 
-## Code of Conduct
+- Caso encontre algum erro, sinta-se livre para me contatar.
+## 📚 Autor
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+* [Débora](https://www.linkedin.com/in/deborabl/)
