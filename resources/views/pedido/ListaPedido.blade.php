@@ -14,7 +14,7 @@
                 @if(!empty($message))
                     <div class="text-white alert alert-success bg-success text-center"></div>
                 @endif
-                <h5 class="card-title text-center">Lista de Pediddos</h5>
+                <h5 class="card-title text-center">Lista de Pedidos</h5>
                 <table class="table table-striped table-hover table-scrollable">
                     <thead>
                     <tr>

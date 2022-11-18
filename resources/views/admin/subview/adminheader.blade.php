@@ -18,7 +18,7 @@
 <body class="bg-dark">
 <header id="header" class="header fixed-top d-flex align-items-center bg-dark">
     <div class="d-flex align-items-center justify-content-between"><a href="/" class="logo d-flex align-items-center">
-            <img src="{{asset('img/icone/doctor-patient.png')}}" class="mt-5" alt="consult-system" width="60px">
+            <img src="{{asset('img/icone/pedido-online.png')}}" class="mt-5" alt="consult-system" width="60px">
             <span class="d-none d-lg-block" id="titulo" >Form Pedidos</span></a><i class="bi bi-list toggle-sidebar-btn text-primary"></i>
     </div>
 @yield('search')

@@ -7,7 +7,7 @@
 
         <li class="nav-item  bg-light">
             <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="">
-                <img src="{{asset('img/icone/people.png')}}" class="mt-4" width="30px" alt="users">
+                <img src="{{asset('img/icone/produtos.png')}}" class="mt-4" width="30px" alt="users">
                 <span class="dropdown-menu-space">Produtos</span>
                 <i class="bi bi-chevron-down ms-auto"></i>
             </a>
@@ -18,7 +18,7 @@
         </li>
         <li class="nav-item  bg-light">
             <a class="nav-link collapsed" data-bs-target="#orders-nav" data-bs-toggle="collapse" href="#">
-                <img src="{{asset('img/icone/doctor.png')}}" class="mt-4" width="30px" alt="nota-fiscal">
+                <img src="{{asset('img/icone/aperto-de-mao.png')}}" class="mt-4" width="30px" alt="nota-fiscal">
                 <span class="dropdown-menu-space">Clientes</span>
                 <i class="bi bi-chevron-down ms-auto"></i>
             </a>
@@ -31,7 +31,7 @@
 
         <li class="nav-item bg-light ">
             <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-                <img src="{{asset('img/icone/functions.png')}}" class="mt-4" width="30px" alt="produtos">
+                <img src="{{asset('img/icone/pedido.png')}}" class="mt-4" width="30px" alt="produtos">
                 <span class="dropdown-menu-space">Pedidos</span>
                 <i class="bi bi-chevron-down ms-auto"></i>
             </a>

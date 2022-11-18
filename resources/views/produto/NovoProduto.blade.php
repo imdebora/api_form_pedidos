@@ -75,7 +75,7 @@
                     </div>
 
                     <div class="row mb-3">
-                        <label for="tipoVariacao" class="col-sm-2 col-form-label">Tipo Variação</label>
+                        <label for="tipoVariacao" class="col-sm-2 col-form-label">Tipo de Variação</label>
                         <div class="col-sm-10">
                             <input type="text" name="tipoVariacao" class="form-control"></div>
                         @error('tipoVariacao')
